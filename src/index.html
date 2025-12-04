@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adaptive Health Navigator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Adaptive Health Navigator</h1>
+    <button id="themeToggleBtn" class="secondary-btn">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="statusSection">
+      <p id="assistStatus">Mode: Standard</p>
+      <p id="hintText">Interact with the interface. The system will adapt to your behavior.</p>
+    </section>
+
+    <section id="dashboard">
+      <button class="primary-btn track-btn" data-action="glucose">Log Glucose</button>
+      <button class="primary-btn track-btn" data-action="meds">Log Medication</button>
+      <button class="primary-btn track-btn" data-action="symptoms">Log Symptoms</button>
+    </section>
+
+    <section id="infoSection">
+      <h2>Your Activity Summary (Conceptual)</h2>
+      <ul id="activityLog"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Conceptual demo for AI-Based Adaptive HCI – Not for clinical use.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
